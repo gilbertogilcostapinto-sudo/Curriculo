@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo profissional de João Pedro Oliveira Builcatti.">
+  <title>Currículo | João Pedro Oliveira Builcatti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">JP<span>.</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#formacao">Formação</a><a href="#habilidades">Habilidades</a>
+    </nav>
+    <div class="actions">
+      <button id="downloadJson" class="button button-light" type="button">Baixar JSON</button>
+      <button id="printCv" class="button button-primary" type="button">Salvar em PDF</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="sobre">
+      <div class="hero-copy">
+        <p class="eyebrow">CURRÍCULO PROFISSIONAL</p>
+        <h1 id="name">João Pedro Oliveira Builcatti</h1>
+        <p class="role" id="title">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <p class="summary" id="summary"></p>
+        <div class="contact-row" id="contact"></div>
+      </div>
+      <div class="portrait-wrap">
+        <img id="portrait" src="assets/foto-perfil.png" alt="Foto profissional de João Pedro">
+      </div>
+    </section>
+
+    <div class="content-grid">
+      <div class="main-column">
+        <section class="panel" id="experiencia">
+          <div class="section-heading"><span>01</span><h2>Experiência profissional</h2></div>
+          <div id="experienceList"></div>
+        </section>
+        <section class="panel" id="formacao">
+          <div class="section-heading"><span>02</span><h2>Formação acadêmica</h2></div>
+          <div id="educationList"></div>
+        </section>
+        <section class="panel" id="habilidades">
+          <div class="section-heading"><span>03</span><h2>Habilidades</h2></div>
+          <div id="skillsList" class="skills-grid"></div>
+        </section>
+      </div>
+      <aside class="side-column">
+        <section class="panel">
+          <div class="section-heading"><span>04</span><h2>Idiomas</h2></div>
+          <div id="languagesList"></div>
+        </section>
+        <section class="panel">
+          <div class="section-heading"><span>05</span><h2>Objetivo profissional</h2></div>
+          <p id="objective" class="muted"></p>
+        </section>
+        <section class="panel">
+          <div class="section-heading"><span>06</span><h2>Áreas de interesse</h2></div>
+          <div id="interestsList" class="tag-list"></div>
+        </section>
+      </aside>
+    </div>
+    <footer>Currículo de <span id="footerName">João Pedro Oliveira Builcatti</span> · <span id="footerLocation">Ferraz de Vasconcelos, SP</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
